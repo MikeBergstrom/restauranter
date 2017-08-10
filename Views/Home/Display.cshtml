@@ -1,0 +1,6 @@
+<h1>Display Page</h1>
+@foreach(var review in @ViewBag.reviews){
+    <h4>Review For: @review.RestName      @review.Rating Stars</h4>
+    <h5>Reviewer: @review.Author</h5>
+    <p>@review.Content</p><br><br>
+}
